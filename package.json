@@ -1,0 +1,26 @@
+{
+  "name": "seedit.tracker",
+  "version": "0.0.1",
+  "description": "seedit tracker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airyland/seedit.tracker.git"
+  },
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*",
+    "mongoose": "*"
+  },
+  "keywords": [
+    "tracker"
+  ],
+  "author": "airyland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/airyland/seedit.tracker/issues"
+  }
+}
