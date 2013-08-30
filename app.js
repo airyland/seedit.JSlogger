@@ -18,9 +18,10 @@ app.get('/_.gif', function(req, res) {
   var url = req.originalUrl;
   var start = url.indexOf('?');
   var search = url.slice(start + 1);
-  console.log(search);
+  //console.log(search);
   var data = querystring.parse(search);
-  console.log(data);
+  console.log(data.from);
+  console.log(data.msg);
   var name = req.query.name;
   var one = new Tracker({
     time: +new Date(),
@@ -37,7 +38,7 @@ app.get('/_.gif', function(req, res) {
     if (err) {
       console.log('err found');
     } // ...
-    console.log('成功记录');
+    //console.log('成功记录');
     res.send(204);
   });
 
